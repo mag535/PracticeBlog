@@ -1,0 +1,92 @@
+/*
+This stylesheet is to format the main page.
+*/
+
+/* setup default formatting for the whole page */
+* {
+	/* text */
+	text-align: left;
+	color: black;
+	background-color: LightGray;
+	font-size: 1.25em; /* 20px */
+	font-family: Didot, Georgia, Palatino, URW Palladio L, serif;
+	/* margins */
+	margin-left: 1em; /* 16px */
+	margin-right: 1em;
+}
+
+body {
+	/* add background for main page */
+}
+
+p {
+	/* text */
+	text-align: center;
+	font-size: 1.25em;
+	color: black;
+	/* margins */
+	margin-left: 4em; /* 64px */
+	margin-right: 4em; /* 64px */
+}
+
+img.in_line { /* for formatting inline images like emotes */
+	/* keep size ratio 1:1 */
+	width: 1em;
+	height: 1em;
+	/* alignment */
+	vertical-align: baseline;
+	/* cursor */
+	cursor: crosshair;
+}
+
+li {
+	/* text */
+	text-align: left;
+	font-size: 1em;
+	color: brown;
+}
+
+.nav { /* for the navigation bar */
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	/* border */
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	/* margin */
+	margin-left: 0;
+	margin-right: 0;
+}
+
+a {
+	cursor: pointer; /* turn default cursor into hand when on link */
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+a:link { /* for unvisited links */
+	/* text */
+	color: #22E7A2; /* teal */
+}
+
+a:visited { /* for visited links */
+	/* text */
+	color: #169a54; /* leaf-green */
+}
+
+a:hover { /* for links hovered over */
+	/* text */
+	color: #F29346; /* pale autumn orange */
+}
+
+.nav a:hover { /* only for navigation links */
+	/* border */
+	border-color: #F29346; /* pale autumn orange */
+	border-style: double solid double solid;
+	border-width: 4px;
+	background-color: #22E7A2; /* teal */
+	padding: 10px;
+}
+

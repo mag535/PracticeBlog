@@ -1,0 +1,254 @@
+/*
+This stylesheet is to format the homepages of each of 
+the subsections: Art, Coding, Electronics.
+*/
+
+/* setup default formatting for the whole page */
+* {
+	/* text */
+	text-align: left;
+	color: black;
+	background-color: LightGray;
+	font-size: 1.25em; /* 20px */
+	font-family: Didot, Georgia, Palatino, URW Palladio L, serif;
+	/* margins */
+	margin-left: 1em; /* 16px */
+	margin-right: 1em;
+}
+
+body.art { /* add the background image for the art home page here */
+	background-image: url("");
+	background-repeat: no-repeat; /* so make a picture long in height */
+	background-position: left top;
+	background-attachment: fixed; /* image will not scroll with the rest of the page */
+}
+
+body.coding { /* add the background image for coding home page here */
+	background-image: url("");
+	background-repeat: repeat; /* so make a picture short in height */
+	background-position: left top;
+	background-attachment: fixed; /* image will not scroll with the rest of the page */
+}
+
+body.electronics { /* add the background image for the electronics home page here */
+	background-image: url("");
+	background-repeat: no-repeat; /* so make a decent-sized picture */
+	background-position: left top;
+	background-attachment: scroll; /* image will scroll with the rest of the page */
+}
+
+.art h1 { /* for the art pages */
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	color: #80078F; /* pink-ish purple */
+	/* background */
+	/*background-color: #F5BB5F; /* soft orange */
+	/* border */
+	border-style: solid solid hidden solid; /* created rectangle border with open bottom */
+	border-width: 0.5em 1em 0.125em 1em; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.coding h1 { /* for the coding pages */
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	color: #30d46c; /* bright green
+	/* background */
+	background-color: #062068; /* screen blue */
+	/* border */
+	border-style: hidden solid hidden solid; /* creating two bars on side */
+	border-width: 0 0.4em 0 0.4em; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.electronics h1 { /* for the electronics pages */
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	/* bright green
+	/* background */
+	background-color: red; /* change red */
+	/* border */
+	border-style: solid hidden solid hidden; /* creating two bars on side */
+	border-width: 0.3em 0 0.3em 0; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.art h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: #80078F; /* pink-ish purple */
+	font-variant: small-caps;
+	/* border */
+	border-style: hidden hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+.coding h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: #30d46c; /* bright green */
+	font-variant: small-caps;
+	/* background */
+	background-color: #062068; /* screen blue */
+	/* border */
+	border-style: hidden hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+.electronics h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: black;
+	font-variant: small-caps;
+	/* background */
+	background-color: red; /* change red */
+	/* border */
+	border-style: solid hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+p {
+	/* text */
+	text-align: left;
+	color: black; /* change to a purple-ish gray */
+	/* margins */
+	margin-left: 4em; /* 64px */
+	margin-right: 4em; /* 64px */
+}
+
+.coding p {
+	/* text */
+	color: #30d46c; /* bright green */
+}
+
+p.summary {
+	/* font */
+	font-size: 1em; /* 16px */
+	color: Gray;
+	/*
+	Add an outline to summary text
+	*/
+}
+
+img.in_line { /* for formatting inline images like emotes */
+	/* keep size ratio 1:1 */
+	width: 1.875em; /* 30px */
+	height: 1.875em;
+	/* alignment */
+	vertical-align: baseline;
+	/* cursor */
+	cursor: crosshair;
+}
+
+.nav { /* for the navigation bar */
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	/* border */
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	/* margin */
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.snapshot { 
+	display: inline;
+	/* border */
+	padding: 0;
+	margin: auto;
+	/* to center */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.snapshot img{ /* use on the images of the snapshot */
+	/* size */
+	width: 300px;
+	height: 300px;
+	/* border */
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+a {
+	cursor: pointer; /* turn default cursor into hand when on link */
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+a:link { /* for unvisited links */
+	/* text */
+	color: #22E7A2; /* teal */
+}
+
+.snapshot a:link {
+	/* border */
+	border-style: solid;
+	border-color: #22E7A2; /* teal */
+	border-width: 4px;
+	/* margin */
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+a:visited { /* for visited links */
+	/* text */
+	color: #169a54; /* leaf-green */
+}
+
+.snapshot a:visited {
+	border-color: #169a54; /* leaf-green */
+}
+
+a:hover { /* for links hovered over */
+	/* text */
+	color: #F29346; /* pale autumn orange */
+}
+
+.nav a:hover { /* only for navigation links */
+	/* border */
+	border-color: #F29346; /* pale autumn orange */
+	border-style: double solid double solid;
+	border-width: 4px;
+	background-color: #22E7A2; /* teal */
+	padding: 10px;
+}
+
+.snapshot a:hover {
+	border-color: #F29346; /* pale autumn orange */
+}
+

@@ -1,0 +1,305 @@
+/*
+This stylesheet is to format any page that implements a 
+blog style way of uploading pictures/videos/gifs.
+*/
+
+/* setup default formatting for the whole page */
+* {
+	/* text */
+	text-align: left;
+	color: black;
+	background-color: LightGray;
+	font-size: 1.25em; /* 20px */
+	font-family: Didot, Georgia, Palatino, URW Palladio L, serif;
+	/* margins */
+	margin-left: 1em; /* 16px */
+	margin-right: 1em;
+}
+
+body.artcat { /* should be same background as subhome */
+	background-image: url("");
+	background-repeat: no-repeat; /* so make a picture long in height */
+	background-position: left top;
+	background-attachment: fixed; /* image will not scroll with the rest of the page */
+}
+
+body.codecat { /* should be same background as subhome */
+	background-image: url("");
+	background-repeat: repeat; /* so make a picture short in height */
+	background-position: left top;
+	background-attachment: fixed; /* image will not scroll with the rest of the page */
+}
+
+body.elecat { /* should be same background as subhome */
+	background-image: url("");
+	background-repeat: no-repeat; /* so make a decent-sized picture */
+	background-position: left top;
+	background-attachment: scroll; /* image will scroll with the rest of the page */
+}
+
+.artcat h1 {
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	color: #80078F; /* pink-ish purple */
+	/* background */
+	/*background-color: #F5BB5F; /* soft orange */
+	/* border */
+	border-style: solid solid hidden solid; /* created rectangle border with open bottom */
+	border-width: 0.5em 1em 0.125em 1em; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.codecat h1 {
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	color: #30d46c; /* bright green
+	/* background */
+	background-color: #062068; /* screen blue */
+	/* border */
+	border-style: hidden solid hidden solid; /* creating two bars on side */
+	border-width: 0 0.4em 0 0.4em; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.elecat h1 {
+	/* text */
+	text-align: center;
+	font-size: 3.125em; /* 50px */
+	font-style: bold;
+	/* bright green
+	/* background */
+	background-color: red; /* change red */
+	/* border */
+	border-style: solid hidden solid hidden; /* creating two bars on side */
+	border-width: 0.3em 0 0.3em 0; /* 8px 16px 2px 16px */
+	/* padding */
+	padding-bottom: 0.5em; /* 8px */
+}
+
+.artcat h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: #80078F; /* pink-ish purple */
+	font-variant: small-caps;
+	/* border */
+	border-style: hidden hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+.codecat h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: #30d46c; /* bright green */
+	font-variant: small-caps;
+	/* background */
+	background-color: #062068; /* screen blue */
+	/* border */
+	border-style: hidden hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+.elecat h2 {
+	/* text */
+	text-align: left;
+	font-size: 1.875em; /* 30px */
+	font-style: bold;
+	color: black;
+	font-variant: small-caps;
+	/* background */
+	background-color: red; /* change red */
+	/* border */
+	border-style: solid hidden hidden solid;
+	border-width: 0.25em 0.125em 0.125em 0.25em; /* 4px 2px 2px 4px */
+	/* margin */
+	margin-left: 2em; /* 32px */
+	margin-right: 2em; /* 32px */
+	/* padding */
+	padding-left: 0.5em; /* 8px */
+}
+
+p {
+	/* text */
+	text-align: left;
+	color: black; /* change to a purple-ish gray */
+	/* margins */
+	margin-left: 4em; /* 64px */
+	margin-right: 4em; /* 64px */
+}
+
+p.summary {
+	/* font */
+	font-size: 1em; /* 16px */
+	color: Gray;
+	/*
+	Add an outline to summary text
+	*/
+}
+
+div.post {
+	/* border */
+	margin-left: 4em;
+	margin-right: 4em;
+	border-style: solid;
+	border-color: black;
+	border-width: 4px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p.artpost {
+	/* text */
+	text-align: left;
+	color: #670580; /* change to a purple-ish gray */
+	/* border */
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.artpost em {
+	/* text */
+	font-size: 1em;
+	text-align: left;
+	color: #9908be; /* change to a purple-ish gray */
+	margin: 1px;
+}
+
+p.codepost {
+	/* text */
+	text-align: left;
+	color: #30d46c; /* bright green */
+	/* border */
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+p.elepost {
+	/* text */
+	text-align: left;
+	color: black;
+	/* border */
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+span.imgpost {
+	display: inline;
+	/* border */
+	padding: 0;
+	margin: auto;
+	/* to center */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.post img{
+	/* size */
+	width: 25%;
+	height: 25%;
+	/* border */
+	padding: 0;
+	margin: auto;
+	/* to center */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.post header { /* to write the date posted and finished */
+	text-align: right;
+	color: #9da3c2; /* pale steel blue */
+}
+
+img.in_line { /* for formatting inline images like emotes */
+	/* keep size ratio 1:1 */
+	width: 1.875em; /* 30px */
+	height: 1.875em;
+	/* alignment */
+	vertical-align: baseline;
+	/* cursor */
+	cursor: crosshair;
+}
+
+.nav { /* for the navigation bar */
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	/* border */
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	/* margin */
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.subnav { /* for the "back to subhome" links */
+	display: block;
+	text-align: left;
+	font-size: 1em;
+}
+
+
+a {
+	cursor: pointer; /* turn default cursor into hand when on link */
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.subnav a{
+	/* border */
+	padding: 2px;
+	border-style: dotted;
+	border-width: 2px;
+}
+
+a:link { /* for unvisited links */
+	/* text */
+	color: #22E7A2; /* teal */
+}
+
+a:visited { /* for visited links */
+	/* text */
+	color: #169a54; /* leaf-green */
+}
+
+a:hover { /* for links hovered over */
+	/* text */
+	color: #F29346; /* pale autumn orange */
+}
+
+.nav a:hover { /* only for navigation links */
+	/* border */
+	border-color: #F29346; /* pale autumn orange */
+	border-style: double solid double solid;
+	border-width: 4px;
+	background-color: #22E7A2; /* teal */
+	padding: 10px;
+}
+
+.subnav a:hover{
+	/* border */
+	padding: 10px;
+	border-width: 4px;
+}
